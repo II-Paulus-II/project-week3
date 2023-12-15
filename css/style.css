@@ -27,6 +27,21 @@ body {
   position: absolute;
   top: 10%;
   border-radius: 4px;
+  scrollbar-width: auto;      
+  scrollbar-color: black lightgreen;
+}
+
+.imageThumbnails::-webkit-scrollbar {
+  height: 4px;
+}
+
+.imageThumbnails::-webkit-scrollbar-track {
+  background: rgba(144, 238, 144, 0.164);
+}
+
+.imageThumbnails::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 1px solid slategrey;
 }
 
 .thumbnailContainer img {
@@ -38,17 +53,25 @@ body {
   display: none;
 }
 
+.mainDescPos {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 2%;
+}
+
 .mainDesc {
+  display: inline;
   font-size: 1.2rem;
   font-weight: bolder;
   padding: 3px 6px;
   text-transform: capitalize;
   background-color: black;
   text-shadow: none;
-  position: absolute;
   text-align: center;
-  right: 2%;
-  bottom: 2%;
   color: aliceblue;
 }
 
@@ -98,9 +121,52 @@ button {
   right: 5vw;
 }
 
-@media only screen and (max-width: 750px) and (orientation: portrait) {
+@media only screen and (max-width: 500px) {
   .imageThumbnails {
-    height: 100px;
+    height: 50px;
+    top: 75%;
   }
   
+  .thumbnailContainer img {
+    height: 50px;
+    width: 60px;
+  }
+  .mainDescPos {
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .imageThumbnails {
+    height: 60px;
+    top: 80%;
+  }
+  
+  .thumbnailContainer img {
+    height: 60px;
+    width: 72px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .imageThumbnails {
+    height: 70px;
+    top: 80%;
+  }
+  
+  .thumbnailContainer img {
+    height: 70px;
+    width: 84px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .imageThumbnails {
+    height: 80px;
+  }
+  
+  .thumbnailContainer img {
+    height: 80px;
+    width: 96px;
+  }
 }
