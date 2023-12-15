@@ -41,13 +41,15 @@ body {
 .mainDesc {
   font-size: 1.2rem;
   font-weight: bolder;
+  padding: 3px 6px;
   text-transform: capitalize;
+  background-color: black;
   text-shadow: none;
   position: absolute;
   text-align: center;
-  left: 2%;
-  top: 2%;
-  color: black;
+  right: 2%;
+  bottom: 2%;
+  color: aliceblue;
 }
 
 span {
@@ -56,7 +58,7 @@ span {
 
 a:link,a:visited,a:hover,a:active {
   text-decoration: none;
-  color: black;
+  color: aliceblue;
 }
 
 a:hover {
@@ -72,6 +74,28 @@ a:hover {
 
 .noDisplay {
   display: none;
+}
+
+button {
+  border: 3px solid aliceblue;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  padding: 10px 10px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+#previous {
+  position: absolute;
+  top: 50vh;
+  left: 5vw;
+}
+
+#next {
+  position: absolute;
+  top: 50vh;
+  right: 5vw;
 }
 
 @media only screen and (max-width: 750px) and (orientation: portrait) {
