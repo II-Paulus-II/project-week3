@@ -25,6 +25,11 @@ function displayImage(thumb, index) {
   if(thumb.alt === "This is a very dangerous cow. You should be afraid of it.") {
     audio.play();
   }
+  thumb.scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center",
+  });
   // console.log(index);
   currentImageIndex = index;
 }
