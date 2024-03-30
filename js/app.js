@@ -8,7 +8,10 @@ const imagesArrayLength = thumbnailButton.length;
 // console.log(thumbnailButton);
 const imageThing = document.getElementById("imageDisplayed");
 // console.log(imageThing);
-const audio = document.querySelector("audio"); //Only one
+const audio = document.getElementById("moo");
+// import audioSrc from "../audio/Cow-Mooing-C-www.fesliyanstudios.com.mp3";
+// document.getElementById("moo").src = audioSrc;
+
 const getNextImgBtn = document.getElementById("next");
 const getPrevImgBtn = document.getElementById("previous");
 
